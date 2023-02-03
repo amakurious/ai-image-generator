@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server"
+    "start": "nodemon server",
+     "postinstall": "npm install"
   },
   "keywords": [],
   "author": "",
