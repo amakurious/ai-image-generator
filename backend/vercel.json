@@ -1,8 +1,15 @@
 {
-  "build": {
-    "env": {
-      "MONGO_URI": "@mongo-uri"
-    },
-    "cmd": "npm install && npm run build && npm start"
-  }
+    "version": 2,
+    "builds": [
+        {
+            "src": "./server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
 }
