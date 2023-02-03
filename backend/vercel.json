@@ -1,0 +1,8 @@
+{
+  "build": {
+    "env": {
+      "MONGO_URI": "@mongo-uri"
+    },
+    "cmd": "npm install && npm run build && npm start"
+  }
+}
